@@ -135,7 +135,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(31, 41, 55, 0.6) 100%);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(31, 41, 55, 0.6) 100%);
       z-index: 1;
     }
 
@@ -742,6 +742,7 @@
     .max-w-lg { max-width: 320px !important; }
 
     /* adjust other dimensions as needed */
+    }
   </style>
 </head>
 
@@ -783,7 +784,7 @@
   <!-- Main Content -->
   <main id="main-content">
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center parallax" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070')" aria-label="Hero section">
+    <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center parallax" style="background-image: url('/image/hero-img.jpg')" aria-label="Hero section">
       <div class="hero-content text-center px-6">
         <h1 class="hero-title text-5xl md:text-7xl font-bold leading-tight max-w-4xl mx-auto mb-6">
           Build Your Dream Home with <span class="text-yellow-400">JKConstruction</span>
@@ -799,44 +800,89 @@
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16 scroll-animate">
-          <h2 class="section-title">Our Expertise</h2>
-          <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">Comprehensive construction solutions tailored to your vision</p>
+   <!-- Features Section -->
+<section id="features" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16 scroll-animate">
+      <h2 class="section-title">Our Expertise</h2>
+      <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+        Comprehensive construction solutions tailored to your vision
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Planning -->
+      <article class="feature-card scroll-animate">
+        <div class="overflow-hidden">
+          <img src="/image/project-planning.jpg" alt="Project planning" class="w-full h-64 object-cover" loading="lazy" />
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <article class="feature-card scroll-animate">
-            <div class="overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031" alt="Project planning blueprints and construction documents" class="w-full h-64 object-cover" loading="lazy" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Planning</h3>
-              <p class="text-gray-600">Strategic planning for flawless execution</p>
-            </div>
-          </article>
-          <article class="feature-card scroll-animate" style="animation-delay: 0.1s">
-            <div class="overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?q=80&w=2031" alt="Modern architectural design and building plans" class="w-full h-64 object-cover" loading="lazy" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-2xl font-bold text-gray-800 mb-2">Architecture</h3>
-              <p class="text-gray-600">Innovative designs that inspire</p>
-            </div>
-          </article>
-          <article class="feature-card scroll-animate" style="animation-delay: 0.2s">
-            <div class="overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1590856029620-23715d0cd2d6?q=80&w=2070" alt="Construction workers building quality structures" class="w-full h-64 object-cover" loading="lazy" />
-            </div>
-            <div class="p-6 text-center">
-              <h3 class="text-2xl font-bold text-gray-800 mb-2">Construction</h3>
-              <p class="text-gray-600">Quality craftsmanship guaranteed</p>
-            </div>
-          </article>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Planning</h3>
+          <p class="text-gray-600">Strategic plans for smooth execution.</p>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <!-- Architecture -->
+      <article class="feature-card scroll-animate" style="animation-delay: 0.1s">
+        <div class="overflow-hidden">
+          <img src="/image/architecture.jpg" alt="Architecture" class="w-full h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Architecture</h3>
+          <p class="text-gray-600">Creative designs that inspire living spaces.</p>
+        </div>
+      </article>
+
+      <!-- Construction -->
+      <article class="feature-card scroll-animate" style="animation-delay: 0.2s">
+        <div class="overflow-hidden">
+          <img src="/image/construction.jpg" alt="Construction" class="w-full h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Construction</h3>
+          <p class="text-gray-600">High-quality craftsmanship guaranteed.</p>
+        </div>
+      </article>
+
+      <!-- Sustainability -->
+      <article class="feature-card scroll-animate" style="animation-delay: 0.3s">
+        <div class="overflow-hidden">
+          <img src="/image/sustainability.jpg" alt="Sustainability" class="w-full h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Sustainability</h3>
+          <p class="text-gray-600">Eco-friendly and responsible building.</p>
+        </div>
+      </article>
+
+      <!-- Customer Satisfaction -->
+      <article class="feature-card scroll-animate" style="animation-delay: 0.4s">
+        <div class="overflow-hidden">
+          <img src="/image/customer-satisfaction.jpg" alt="Customer Satisfaction" class="w-full h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Customer Satisfaction</h3>
+          <p class="text-gray-600">Trusted by 1000+ happy clients.</p>
+        </div>
+      </article>
+
+      <!-- Certified Engineers -->
+      <article class="feature-card scroll-animate" style="animation-delay: 0.5s">
+        <div class="overflow-hidden">
+          <img src="/image/engineer.png" alt="Certified Engineers" class="w-full h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Certified Engineers</h3>
+          <p class="text-gray-600">Experienced and licensed professionals.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- About Section -->
     <section id="about" class="py-24 bg-white relative overflow-hidden">
