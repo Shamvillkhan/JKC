@@ -814,15 +814,18 @@
     <!-- Feature Cards -->
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Project Planning -->
-      <article class="feature-card scroll-animate">
-        <div class="overflow-hidden">
-          <img src="/image/project-planning.jpg" alt="Project planning" class="w-full h-64 object-cover" loading="lazy" />
-        </div>
-        <div class="p-6 text-center">
-          <h3 class="text-2xl font-bold text-gray-800 mb-2">Project Planning</h3>
-          <p class="text-gray-600">Strategic plans for smooth execution.</p>
-        </div>
-      </article>
+      <article class="feature-card scroll-animate" style="animation-delay:0.6s">
+  <div class="overflow-hidden">
+    <img src="/image/elevation.jpg" alt="Elevation Design" class="w-full h-64 object-cover" loading="lazy" />
+  </div>
+  <div class="p-6 text-center">
+    <h3 class="text-2xl font-bold text-gray-800 mb-2">Elevation Design</h3>
+    <p class="text-gray-600">
+      Expert in Roman and Modern Elevation styles & Old Arts.
+    </p>
+  </div>
+</article>
+
 
       <!-- Architecture -->
       <article class="feature-card scroll-animate" style="animation-delay: 0.1s">
@@ -958,77 +961,141 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16 scroll-animate">
-          <h2 class="section-title">Our Services</h2>
-          <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">Comprehensive solutions for all your construction needs</p>
+<!-- Services Section -->
+<section id="services" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16 scroll-animate">
+      <h2 class="section-title">Our Services</h2>
+      <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+        Comprehensive solutions for all your construction needs, delivered with quality, precision, and safety.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8" id="servicesGrid">
+      <!-- Default 6 Services -->
+
+      <article class="service-card scroll-animate">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-compass text-white text-3xl"></i>
         </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Project Planning</h3>
+        <p class="text-gray-600 relative z-10">
+          Strategic project planning ensuring seamless execution from concept to completion.
+        </p>
+      </article>
 
-        <div class="grid md:grid-cols-3 gap-8">
-          <article class="service-card scroll-animate">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-compass text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Project Planning</h3>
-            <p class="text-gray-600 relative z-10">
-              Comprehensive project planning services to ensure your vision becomes reality with precision and efficiency.
-            </p>
-          </article>
-
-          <article class="service-card scroll-animate" style="animation-delay: 0.1s">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-building text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Architectural Design</h3>
-            <p class="text-gray-600 relative z-10">
-              Innovative architectural solutions tailored to your needs, blending functionality with aesthetic appeal.
-            </p>
-          </article>
-
-          <article class="service-card scroll-animate" style="animation-delay: 0.2s">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-hammer text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Construction</h3>
-            <p class="text-gray-600 relative z-10">
-              Quality construction services delivered with professionalism and attention to detail.
-            </p>
-          </article>
-
-          <article class="service-card scroll-animate" style="animation-delay: 0.3s">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-ruler-combined text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Interior Design</h3>
-            <p class="text-gray-600 relative z-10">
-              Beautiful interior spaces designed to reflect your personality and enhance your lifestyle.
-            </p>
-          </article>
-
-          <article class="service-card scroll-animate" style="animation-delay: 0.4s">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-paint-brush text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Renovation</h3>
-            <p class="text-gray-600 relative z-10">
-              Transform your existing space with our expert renovation services that respect your budget.
-            </p>
-          </article>
-
-          <article class="service-card scroll-animate" style="animation-delay: 0.5s">
-            <div class="service-icon" aria-hidden="true">
-              <i class="fas fa-lightbulb text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Consultation</h3>
-            <p class="text-gray-600 relative z-10">
-              Expert advice and guidance to help you make informed decisions about your project.
-            </p>
-          </article>
+      <article class="service-card scroll-animate" style="animation-delay:0.1s">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-building text-white text-3xl"></i>
         </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Architectural Design</h3>
+        <p class="text-gray-600 relative z-10">
+          Innovative designs blending functionality with aesthetics to bring your vision to life.
+        </p>
+      </article>
+
+      <article class="service-card scroll-animate" style="animation-delay:0.2s">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-hammer text-white text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Construction</h3>
+        <p class="text-gray-600 relative z-10">
+          Expert construction services delivered with precision, quality, and attention to detail.
+        </p>
+      </article>
+
+      <article class="service-card scroll-animate" style="animation-delay:0.3s">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-ruler-combined text-white text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Interior Design</h3>
+        <p class="text-gray-600 relative z-10">
+          Beautiful, functional interior spaces crafted to reflect your style and enhance your living experience.
+        </p>
+      </article>
+
+      <article class="service-card scroll-animate" style="animation-delay:0.4s">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-paint-brush text-white text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Renovation</h3>
+        <p class="text-gray-600 relative z-10">
+          Transform existing spaces with expert renovation solutions while respecting your budget.
+        </p>
+      </article>
+
+      <article class="service-card scroll-animate" style="animation-delay:0.5s">
+        <div class="service-icon" aria-hidden="true">
+          <i class="fas fa-lightbulb text-white text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Consultation</h3>
+        <p class="text-gray-600 relative z-10">
+          Expert advice and guidance to make informed decisions about your construction projects.
+        </p>
+      </article>
+
+      <!-- Hidden Services (Initially) -->
+      <div id="extraServices" class="hidden">
+        <article class="service-card scroll-animate" style="animation-delay:0.6s">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-tree text-white text-3xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Landscaping</h3>
+          <p class="text-gray-600 relative z-10">
+            Create stunning outdoor spaces with sustainable and creative landscaping solutions.
+          </p>
+        </article>
+
+        <article class="service-card scroll-animate" style="animation-delay:0.7s">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-bolt text-white text-3xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Electrical Works</h3>
+          <p class="text-gray-600 relative z-10">
+            Safe and efficient electrical installations and maintenance for residential and commercial projects.
+          </p>
+        </article>
+   <article class="service-card scroll-animate" style="animation-delay:0.7s">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-building text-white text-3xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Elevation Design</h3>
+          <p class="text-gray-600 relative z-10">
+            Expert in Roman and Modern Elevation styles, creating visually stunning and elegant facades.
+          </p>
+        </article>
+   <article class="service-card scroll-animate" style="animation-delay:0.7s">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-paint-roller text-white text-3xlPlay responsibly. Teammates can still. This is a simulation game set in a virtual world and does not represent real life. Please play in moderation, take frequent breaks, and play responsibly. "></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Painting</h3>
+          <p class="text-gray-600 relative z-10">
+           Professional painting services using high-quality materials for a lasting and aesthetic finish.
+          </p>
+        </article>
+
+        <article class="service-card scroll-animate" style="animation-delay:0.8s">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-shield-alt text-white text-3xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-3 relative z-10">Safety Audits</h3>
+          <p class="text-gray-600 relative z-10">
+            Comprehensive safety inspections to ensure compliance with all safety standards and protect your team.
+          </p>
+        </article>
       </div>
-    </section>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-10">
+      <button id="viewMoreBtn" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
+        View All Services
+      </button>
+    </div>
+  </div>
+</section>
 
     <!-- Projects Gallery -->
     <section id="projects" class="py-24 bg-white">
@@ -1441,7 +1508,14 @@
   </button>
 
   <script>
-    
+
+        const btn = document.getElementById('viewMoreBtn');
+  const extra = document.getElementById('extraServices');
+
+  btn.addEventListener('click', () => {
+    extra.classList.toggle('hidden');
+    btn.textContent = extra.classList.contains('hidden') ? 'View All Services' : 'Show Less';
+  });
 
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
