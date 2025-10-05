@@ -1799,6 +1799,20 @@
         }, 5000);
       }, 1500);
     });
+
+    // Mobile zoom out to 75%
+function setMobileZoom() {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (window.innerWidth <= 768) { // Mobile screens
+        viewport.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=no');
+    } else { // Desktop
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+}
+
+// Run on load and resize
+window.addEventListener('load', setMobileZoom);
+window.addEventListener('resize', setMobileZoom);
   </script>
 </body>
 </html>
